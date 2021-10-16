@@ -1,0 +1,15 @@
+.container {
+    text-align: center;
+}
+h3.title {
+    background: #54a0ff;
+    padding: 7px 10px;
+}
+.ndmotkhoi {
+    margin-left: 10px;
+}
+.hieuung {
+    width: 300px;
+    margin: 0 auto;
+    border: 1px solid #c8d6e5;
+}

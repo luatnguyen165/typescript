@@ -1,0 +1,14 @@
+.menu {
+    padding: 30px 0px;
+    background: #63537d;
+    position: fixed;
+    width: 100%;
+    z-index: 10;
+    color: white;
+    font-size: 30px;
+}
+.nholai{
+    padding:20px 0px;
+    font-size:20;
+    background: green;
+}

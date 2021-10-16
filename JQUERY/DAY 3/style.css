@@ -1,0 +1,39 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+.home {
+    background: url(./image/131983_CH5.jpg);
+    width: 100%;
+    height: 100vh;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+li {
+    padding: 0 12px;
+}
+nav.menutren {
+    width: 100%;
+    position: fixed;
+    background:transparent;
+    /* top: 0; */
+    height: 50px;
+    line-height: 50px;
+    /* background: #b2bec3; */
+}
+nav.menutren.menu-scroll {
+    background: gainsboro;
+    color:black;
+}
+ul {
+    display: flex;
+    margin-left: 27%;
+}
+a{
+    color: #fff;
+}

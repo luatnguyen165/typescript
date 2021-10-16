@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;500;700&family=Oswald&display=swap');
+/* common styles */
+/* font-family: 'Baloo 2', cursive;
+font-family: 'Oswald', sans-serif; */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    text-decoration: none;
+    list-style-type: none;
+    font-family: 'Baloo 2', cursive;
+}
+html{
+    font-size: 62.5%;
+}
+
+/* end common styles */
+
+/* section-1 */
+.section-1{
+    width: 100%;
+    height: 100vh;
+    background: url('./images/dark-bg.jpeg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+.banner{
+    position: absolute;
+    left: 50%;
+    top: 20%;
+    transform:translateX(-50%);
+    text-align: center;
+}
+.banner-heading{
+    margin-bottom: 4rem;
+    height: 40rem;
+}
+.banner-heading span{
+    font-family: 'Oswald', sans-serif;
+    font-weight: 400;
+    font-size: 12rem;
+    color: #fff;
+    text-transform: uppercase;
+    text-shadow: .3rem .3rem .6rem rgba(0,0, 0, 0.5);
+    width: 100%;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+}
+.banner-paragraph{
+    color: #fff;
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    width: 40%;
+    margin: 0 auto 4rem;
+    padding: 1rem 0;
+    box-shadow: 1rem 1rem 5rem rgba(0,0,0,0.5);
+}
+.banner-btn{
+    width: 30rem;
+    height:6rem;
+    font-size: 2rem;
+    padding: 1rem 2rem;
+    background-color:red;
+    border: none;
+    text-transform: uppercase;
+    color: white;
+    border-radius:3rem;
+    border: 1px solid #800505;
+    text-shadow: .6rem .3rem .2rem rgba(0,0,0,0.4);
+    cursor: pointer;
+}
+/* end section-1 */

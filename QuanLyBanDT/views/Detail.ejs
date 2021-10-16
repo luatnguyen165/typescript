@@ -1,0 +1,62 @@
+<%- include Header.ejs %>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-body">
+
+                        <img class="img-thumbnail" src="/uploads/<%=detail.image %>" alt="" >
+                      
+                    </div>
+                  
+                </div>
+                <div class="card row">
+                    <div class="card-body col-md-3">
+                        <img src="../images/iphone-13-xanh-0e93cfe9-ae04-4861-8474-caf5d2f68571-6e709364-4a0b-4a25-9562-c214ca8ee276.png" alt="" class="img-item">
+                    </div>
+                    <div class="card-body col-md-3">
+                        <img src="../images/iphone-13-xanh-0e93cfe9-ae04-4861-8474-caf5d2f68571-6e709364-4a0b-4a25-9562-c214ca8ee276.png" alt="" class="img-item">
+                    </div>
+                    <div class="card-body col-md-3">
+                        <img src="../images/iphone-13-xanh-0e93cfe9-ae04-4861-8474-caf5d2f68571-6e709364-4a0b-4a25-9562-c214ca8ee276.png" alt="" class="img-item">
+                    </div>
+                    <div class="card-body col-md-3">
+                        <img src="../images/iphone-13-xanh-0e93cfe9-ae04-4861-8474-caf5d2f68571-6e709364-4a0b-4a25-9562-c214ca8ee276.png" alt="" class="img-item">
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title"> <h3><%= detail.name %></h3></h3></h5>
+                        <p class="card-text"><h4> <%= detail.price%>đ</h4></h4></p>
+                    </div>
+                    <div class="card-footer">
+                        <a href="/addToCart/<%= detail._id%>" class="btn btn-success btn-block"><i class="fas fa-cart-plus"></i> Thêm vào giỏ</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card card-box">
+                    <div class="card-header discount ">
+                      <h3>Khuyến mãi</h3>  
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Title</h5>
+                        <p class="card-text">Content</p>
+                    </div>
+                </div>
+                <div class="card card-box">
+                    <div class="card-header  discount">
+                      <h3>Cam kết bán hàng</h3>  
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Title</h5>
+                        <p class="card-text">Content</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+   
+    <%- include Footer.ejs %>

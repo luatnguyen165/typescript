@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <title>LOAD MORE</title>
+</head>
+
+<body>
+    <div id="content">
+        <div id="data"></div>
+        <button  onclick="loadmore()" id="lbutton">Load more</button>
+    </div>
+</body>
+<script >
+    
+    var currentIndex= 0;
+    function loadmore(){
+        
+        var max=2;
+        
+        var items = ['one','two','three','four','five','six','seven','eight']
+       for(var i = 0;i<max;i++){
+           if(currentIndex>=items.length){
+               $('#lbutton').hide()
+               return;
+           }
+           $('#data').append('<div>'+items[i +currentIndex]+'</div>')
+           items[i]
+       }
+       currentIndex+=max
+    }
+    loadmore()
+</script>
+</html>

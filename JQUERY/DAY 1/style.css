@@ -1,0 +1,29 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+img {
+    width: 100%;
+}
+.dangky {
+    width: 300px;
+    height: 450px;
+    position: fixed;
+    top: 10%;
+    left: 40%;
+    
+}
+.dangnhap{
+    width: 300px;
+    height: 450px;
+    position: fixed;
+    top: 10%;
+    left: 40%;
+}
+buttom.nutso1,buttom.nutso2 {
+    padding: 10px 15px;
+    background: green;
+  
+    float: right;
+  
+}

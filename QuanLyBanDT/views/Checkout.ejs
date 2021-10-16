@@ -1,0 +1,66 @@
+<%-  include Header.ejs %>
+<style>
+    img.image-checkout {
+    height: 50px;
+}
+</style>
+<div class="container-fluid mt-10">
+    <div class="row">
+        <div class="col-md-9">
+            <table class="table table-dark">
+                <thead>
+                    <tr>
+                        <th>STT</th>
+                        <th>Hình </th>
+                        <th>Tên</th>
+                        <th>Gía</th>
+                        <th>Số Lượng</th>
+                        <th>Thành Tiền</th>
+                        <th>Hành động</th>
+                        <th>Xóa Sản Phẩm</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <% products.forEach(function(product,index){%>
+                        <tr>
+                            <td><%= index %></td>
+                            <td><image src="/uploads/<%=product.product.image%>" alt="<%=product.product.name%>" class="image-checkout"/></td>
+                                <td><%= product.product.name %></td>
+                                <td><%= product.product.price %></td>
+                                <td><%= product.quantity %></td>
+                                <td><%= product.product.price * product.quantity %></td>
+                                <td>
+                                    
+                                    <form method="get" action="/updateA/<%=product.product._id%>">
+                                        <button type="submit" class="btn btn-warning">-</button>
+                                         </form> 
+                                    <form method="get" action="/updateD/<%=product.product._id%>">
+                                    <button type="submit" class="btn btn-success">+</button>
+                                     </form> 
+                                </td>
+                                <td>
+                                    <form method="get" action="/Checkout/delete/<%=product.product._id%>">
+                                        <button type="submit" class="btn btn-danger">Xóa</button>
+                                         </form> 
+                                </td>
+                        </tr>
+                    <%})%>
+                    
+                </tbody>
+            </table>
+        </div>
+        <div class="col-md-3">
+            <div class="card">
+                <div class="card-header">
+                    Thanh Toán
+                </div>
+                <div class="card-body">
+                    <h5 class class="card-title">Tổng Tiền:<%= totalPrice%></h5>
+                   <a href="/order" class="btn btn-primary">Thanh Toán Qua VNPAY</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+</div>
+  <%- include Footer.ejs %>
